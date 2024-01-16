@@ -27,17 +27,17 @@ const images = [
   },
 ];
 
-const body = document.querySelector("body")
-body.style.backgroundColor = "teal"
+
+
 
 const galleryContainer = document.querySelector('.gallery');
 
 galleryContainer.style.display = "flex";
 galleryContainer.style.flexDirection = "row";
-galleryContainer.style.gap = "15px";
+galleryContainer.style.gap = "48px 24px";
 galleryContainer.style.flexWrap = "wrap";
 galleryContainer.style.margin = "auto"
-galleryContainer.style.width = "700px"
+galleryContainer.style.width = "1200px"
 
 const fragment = document.createDocumentFragment();
 
@@ -49,7 +49,7 @@ images.forEach(image => {
   const imageElement = document.createElement('img');
   imageElement.src = image.url;
   imageElement.alt = image.alt;
-  imageElement.style.width = "300px"
+  imageElement.style.width = "360px";
 
   listItem.appendChild(imageElement);
   fragment.appendChild(listItem);
